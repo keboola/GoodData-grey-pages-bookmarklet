@@ -8,7 +8,7 @@
 	gdPid = gdPid[1];
 
 	function requireJQuery(onLoad) {
-		if (window.jQuery === undefined || window.jQuery.fn.jquery < v) {
+		if (window.jQuery === undefined) {
 			var done = false;
 			var script = document.createElement("script");
 			script.src = "https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js";
@@ -49,7 +49,6 @@
 		}
 	];
 
-
 	// widget init
 	requireJQuery(function($) {
 
@@ -76,7 +75,7 @@
 		list.append('<li class="mi label noHover">'
 			+ '<a><span title="Project maintenace">Project maintenance</span></a>' +
 			'</li>');
-		
+
 		$.each(urls, function(index, action) {
 			list.append($('<li><a href="' + action.url + '" target="_blank">' + action.title + '</a></li>'));
 		});
@@ -99,5 +98,4 @@
 
 	});
 
-//	window.open('/gdc/md/' + match[1], '_tab');
 })(window);
