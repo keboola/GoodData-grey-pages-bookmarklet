@@ -53,7 +53,7 @@
 	// widget init
 	requireJQuery(function($) {
 
-		if (window.data('goodDataGreyPagesBookmarletLoaded')) {
+		if ($(window).data('goodDataGreyPagesBookmarletLoaded')) {
 			$('#goodDataGreyPagesBookmarlet').show();
 			return;
 		}
