@@ -64,7 +64,7 @@
 					#goodDataGreyPagesBookmarlet { \
 						position: absolute; \
 						z-index: 9999; \
-						left: 50%; \
+						right: 0; \
 					} \
 					"
 		}));
