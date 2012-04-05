@@ -1,8 +1,3 @@
-javascript:(function(){ 
-	var match = document.location.hash.match(/\/gdc\/projects\/([a-z0-9]+)/i); 
-	if (!match) {
-		alert('GD project id not found.');
-		return;
-	}
-	window.open('/gdc/md/' + match[1], '_tab');
-})();
+var script = document.createElement('script');
+	script.src = 'https://github.com/keboola/GoodData-grey-pages-bookmarklet/blob/master/greypages.min.js?rand=' + Math.random();
+document.getElementsByTagName('head')[0].appendChild(script);
