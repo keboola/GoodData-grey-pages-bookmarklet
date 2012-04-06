@@ -90,8 +90,14 @@
 			event.stopPropagation();
 		});
 
-		container.delegate('a', 'click', function() {
+		container.delegate('li', 'click', function(e) {
+			$(this).find('a').trigger('click', e);
+		});
+
+		container.delegate('a', 'click', function(event) {
+			window.open($(this).attr('href'), '_blank');
 			container.hide();
+			event.stopPropagation();
 		});
 
 		$(window).data('goodDataGreyPagesBookmarletLoaded', true);
