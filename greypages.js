@@ -97,7 +97,7 @@
 		container.delegate('a', 'click', function(event) {
 			window.open($(this).attr('href'), '_blank');
 			container.hide();
-			event.stopPropagation();
+			return false;
 		});
 
 		$(window).data('goodDataGreyPagesBookmarletLoaded', true);
