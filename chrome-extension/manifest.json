@@ -1,0 +1,13 @@
+{
+	"name": "GoodData Grey Pages Bookmarklet",
+	"version": "1.0",
+	"manifest_version": 2,  
+	"description": "Bookmarklet provides you quick accesss to GoodData project's grey pages.",
+	"permissions": [
+		"tabs", "http://*/*"
+	],
+	"browser_action": {
+		"default_icon": "gd-icon.png",
+		"default_popup": "popup.html"
+	}
+}
